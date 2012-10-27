@@ -1,11 +1,13 @@
+<div id="content" class="span-14">
+
 <div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
+  <h2>{{ page.title }}</h2>
+  <p class="date"><em>{{ page.date | date_to_long_string }}</em></p>
 </div>
 
-<div class="row">
-  <div class="span8">
     {{ content }}
-    <hr>
+    
+    
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -21,20 +23,19 @@
       {% endif %}
       </ul>
     </div>
-    <hr>
-    {% include JB/comments %}
-  </div>
+
   
-  <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
+  <div id="pagination">
+    
 
   {% unless page.tags == empty %}
     <h4>Tags</h4>
-    <ul class="tag_box">
+    <ul>
     {% assign tags_list = page.tags %}
     {% include JB/tags_list %}
     </ul>
   {% endunless %}  
   </div>
 </div>
+
+{% include themes/makematics/sidebar.html %}
