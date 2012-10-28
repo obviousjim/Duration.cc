@@ -28,131 +28,116 @@
         font-size: 100%;
         line-height: 1.5;
         background-color: #262626;
-        
+        color: #ddd;
+        font-family: Helvetica;
       }
 
       #header {
         margin-bottom: 0;
       }
       
-      h1 a{
-        text-decoration: none;
-        color: #eff;
-        background: #566;
-                
-      }
-      
-      h1 a:hover{
-        color: #eff;
+
+      h1, h2, h3, h4, h5, h6 {
+        color: #ddd;                
 
       }
-      
+
       h1 {
-        font-size: 32px;
-        border-bottom: 4px solid #566;
-        margin-bottom: 0px;
-      }
-      
-      
-      a{
-                text-decoration: none;
-      }
-      
-      a:hover{
-                text-decoration: underline;
+        padding-top: 15px;
 
       }
       
-      h2 a {
-        font-weight: bold;
-        color: #566;
+      h1 a {
+        color: #F9420A;                
+        text-decoration: none;
       }
 
-      h2 a:hover{
-        color: #566;
+      p a {
+        /*background-color: #F9420A;  */
+        color: #F9420A;
+/*        padding: 3px;
+        text-decoration: none;  
+        font-weight: bold; */           
       }
 
-      h2 {
-          font-weight: bold;
-        color: #566;
-      }
-     
-      
-      #sidebar {
-        border-left: 1px solid #cdd;
-        padding-left: 9px;
-        margin-top: 160px;
-      }
-      
-      #sidebar a {
-        color: #566;
-      }
-      
-      #sidebar ul {
-        color: #566;
-                padding-left: 5px;
-
-      }
-      #sidebar li {
-        margin-bottom: 16px;
-        list-style-type: none;
+      a img {
+        border: none;
+        color: none;
       }
 
-      #pagination li {
-        list-style-type: none;
+      a:hover {
+        color: #a53600;
       }
 
-      #pagination .disabled {
-        display: none;
+      #partners img {
+        margin-right: 30px;
+        height: 80px;
       }
 
-      #footer {
-        border-top: 2px solid #cdd;
-        text-align: center;
+      #partners p{
+        margin-bottom: 10px;
+        color: #999;
         font-style: italic;
-        color: #566;
-        padding-top: 1em;
-        font-size: 75%;
-      }
-
-      .footer-divider{
-        color: #cdd;
-
-      }
-
-      #nav {
-          margin-bottom: 2em;
-
-      }
-      #nav li {
-        list-style-type: none;
-        float: right;
-      }
-
-      #nav ul {
-        padding-left: 0;
-      }
-
-      #nav a {
-        color: #566;
-        font-weight: bold;
-        border:1px solid #566;
-        border-top: none;
-        width: 100px;
-        text-align: center;
-        display: block;
-      }
-
-      #nav a:hover {
-        color: #eff;
-        background-color: #566;
       }
       
       pre {
         background: #fff;
         padding: 5px;
+
       }
 
+
+      #logoText h1 {
+        margin-bottom: 0;
+      }
+
+      #logoText p {
+        margin-top: -10px;
+        padding-left: 3px;
+      }
+
+      #screenshot img {
+        padding-left: 19px;
+      }
+
+      #download {
+        margin-top: 15px;
+        padding: 10px;
+        background: #000;
+        text-align: center;
+      }
+
+      #download img {
+        height: 50px;
+        margin-left: 10px;
+      }
+
+      #download h3{
+        border-bottom: 1px solid #444;
+        margin-bottom: 0;
+      }
+
+      #download p {
+        margin-top: 0;
+        font-size: 10px;
+      }
+
+      #intro {
+        /*font-size: 12px;*/
+        font-weight: bold;
+        padding: 10px;
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+
+      #footer {
+        color: #444;
+      }
+
+      #footer a {
+        color: #a53600;
+      }
+      
 
     </style>
 
@@ -175,16 +160,57 @@
     <div class="container">
 
       <div id="header" class="span-20 push-2">
+        <div id="logo" class="span-2">
+          <img src="/assets/images/duration_logo.png" class="span-2" />
+        </div>
+
+        <div id="logoText" class="span-16">
           <h1 style="color:orange"><a href="/">Duration</a></h1>
+          <p>Timeline for Creative Coding</p>
+        </div>
       </div>
       
 
       <div id="content-wrapper" class="span-20  push-2">
-        {{ content }}
+
+        <div id="intro" class="span-20 push-2">
+          <p>
+            Duration is the timeline for creative coding. Create compositions for live performances, interactive installations, and music visualizations by controlling servos, lighting, sound synthesis and generative visualizations.
+          </p>
+          </div>
+
+        <div id="screenshot" class="span-14 push-1">
+          <img src="/assets/images/duration_screen.png" class="span-14"/>
+        </div>
+
+        
+
+        <div id="download" class="span-5 push-2">
+
+
+          <h3>Download now</h3>
+          <p>v002 EVERYWHERE</p>
+          <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_OSX_002_preRelease.zip"><img src="/assets/images/mac.png"></a>
+
+          <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_Windows_002_preRelease.zip"><img src="/assets/images/windows.png"></a>
+            <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_Linux_002_preRelease.zip"><img src="/assets/images/linux.png"></a>
+        </div>
+
+        <div id="partners" class="span-20 push-2">
+
+          <p><img src="/assets/images/openFrameworks.png"/>
+          <img src="/assets/images/processing.png"/>
+          <img src="/assets/images/quartz_composer.png"/>
+          <img src="/assets/images/vdmx_logo.png"/>
+          <img src="/assets/images/cinder_logo_large.jpeg"/></p>
+
+          <p>Duration integrates with <a href="http://processing.org">Processing</a>, <a href="http://cycling74.com/">Max</a>, <a href="http://vidvox.net/">VDMX</a>, <a href="http://openframeworks.cc">OpenFrameworks</a>, <a href="http://unity3d.com/">Unity3d</a>, <a href="https://developer.apple.com/technologies/mac/graphics-and-animation.html">Quartz</a>, and any other OSC enabled environment. 
+        </p>
+        </div>
       </div>
 
-      <div id="footer" class="span-20 push-2">
-        <p>&copy; {{ site.author.name }} 2012 <span class="footer-divider">|</span> <a href="http://twitter.com/makematics">@makematics</a> <span class="footer-divider">|</span> <a href="http://github.com/atduskgreg/makematics">github/makematics</a>
+      <div id="footer" class="span-20 push-4">
+        <p>&copy; James George 2012 <span class="footer-divider">|</span> <a href="http://twitter.com/obviousjim">@obviousjim</a> <span class="footer-divider">|</span> <a href="https://github.com/YCAMInterlab/Duration">On Github: YCAMInterlab/Duration</a>
         </p>
       </div>
 
