@@ -3,20 +3,20 @@ layout: default
 ---
 {% include JB/setup %}
 
-<div id="intro" class="span-20 push-2">
+<div id="intro" class="span-20">
   <p>
     Duration is the timeline for creative coding. Create compositions for live performances, interactive installations, and music visualizations by controlling servos, lighting, sound synthesis and generative visualizations.
   </p>
 
   </div>
 
-<div id="screenshot" class="span-14 push-1">
+<div id="screenshot" class="span-14 pull-1">
   <img src="/assets/images/duration_screen.png" class="span-14"/>
 </div>
 
 
 
-<div id="download" class="span-5 push-2">
+<div id="download" class="span-5">
 
 
   <h3>Download now</h3>
@@ -27,7 +27,7 @@ layout: default
     <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_Linux_002_preRelease.zip"><img src="/assets/images/linux.png"></a>
 </div>
 
-<div id="partners" class="span-20 push-2">
+<div id="partners" class="span-20">
 
   <p><img src="/assets/images/openFrameworks.png"/>
   <img src="/assets/images/processing.png"/>
