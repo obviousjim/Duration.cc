@@ -5,27 +5,24 @@ layout: default
 
 <div id="intro" class="span-20">
   <p>
-    Duration is the timeline for creative coding. Create compositions for live performances, interactive installations, and music visualizations by controlling servos, lighting, sound synthesis and generative visualizations.
+    Duration is a timeline for creative coding. Create live performances, interactive installations, and music visualizations by synchronously composing servos, lighting, and projection.
   </p>
+</div>
 
-  </div>
-
-<div id="screenshot" class="span-14 pull-1">
-  <img src="/assets/images/duration_screen.png" class="span-14"/>
+<div id="screenshot" class="span-24">
+  <img src="assets/images/duration_screen.png" class="span-20"/>
 </div>
 
 
-
+<!-- 
 <div id="download" class="span-5">
 
-
-  <h3>Download now</h3>
-  <p>v002 EVERYWHERE</p>
-  <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_OSX_002_preRelease.zip"><img src="/assets/images/mac.png"></a>
-
-  <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_Windows_002_preRelease.zip"><img src="/assets/images/windows.png"></a>
-    <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_Linux_002_preRelease.zip"><img src="/assets/images/linux.png"></a>
+  <h3>Watch Tutorial</h3>
+  <p>on Vimeo</p>
+  <a href="https://github.com/downloads/YCAMInterlab/Duration/Duration_OSX_002_preRelease.zip"><img src="assets/images/play.png"></a>
 </div>
+
+-->
 
 <div id="partners" class="span-20">
 

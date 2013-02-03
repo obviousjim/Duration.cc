@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head profile="http://www.w3.org/2005/10/profile">
     <meta charset="utf-8">
-    <title>{{ page.title }}</title>
+    <title>Duration Timeline</title>
     {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
     <meta name="author" content="{{ site.author.name }}">
 
@@ -16,20 +16,26 @@
     <!--[if lt IE 9]>
     <![endif]-->
 
-        <link href="/assets/css/blueprint/ie.css" rel="stylesheet" type="text/css" media="all">
+        <link href="assets/css/blueprint/ie.css" rel="stylesheet" type="text/css" media="all">
 
     <!-- Le styles -->
-    <link href="/assets/css/blueprint/screen.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/blueprint/screen.css" rel="stylesheet" type="text/css" media="all">
     
-    <link href="/assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+    <link href="assets/css/pygments.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
 
     <style>
       body{
+		padding-top: 10px;
         font-size: 100%;
         line-height: 1.5;
         background-color: #262626;
         color: #ddd;
         font-family: Helvetica;
+		background-image:url('assets/images/duration_background.png');
+		background-repeat:no-repeat;
+		background-attachment:fixed;
+		
       }
 
       #header {
@@ -55,7 +61,7 @@
       p a {
         /*background-color: #F9420A;  */
         color: #F9420A;
-/*        padding: 3px;
+/*        padding: 3px 0px;
         text-decoration: none;  
         font-weight: bold; */           
       }
@@ -71,6 +77,7 @@
 
       #partners img {
         margin-right: 30px;
+		margin-top: 30px;
         height: 80px;
       }
 
@@ -86,22 +93,21 @@
 
       }
 
-
       #logoText h1 {
         margin-bottom: 0;
       }
 
       #logoText p {
         margin-top: -10px;
-        padding-left: 3px;
       }
 
       #screenshot img {
-        padding-left: 19px;
+
       }
 
       #download {
         margin-top: 15px;
+        margin-left: 20px;
         padding: 10px;
         background: #000;
         text-align: center;
@@ -125,7 +131,7 @@
       #intro {
         /*font-size: 12px;*/
         font-weight: bold;
-        padding: 10px;
+        
         margin-bottom: 0;
         font-size: 18px;
       }
@@ -159,27 +165,34 @@
   <body>
     <div class="container">
 
-      <div id="header" class="span-20 push-2">
+      <div id="header" class="span-24">
         <div id="logo" class="span-2">
-          <img src="/assets/images/duration_logo.png" class="span-2" />
+          <img src="assets/images/duration_logo.png" class="span-4" />
         </div>
 
-        <div id="logoText" class="span-16">
-          <h1 style="color:orange"><a href="/">Duration</a></h1>
+        <div id="logoText" class="span-15 push-2">
+          <h1><a href="index.html"><img src="assets/images/DurationText.png"/></a></h1>
+			
           <p>Timeline for Creative Coding</p>
         </div>
 
-        
+		<div id="download" class="span-5 push-2">
+
+		  <h3>Download now</h3>
+		  <a href="downloads/Duration_003_OSX.zip"><img src="assets/images/mac.png"/></a>
+		  <a href="downloads/Duration_003_Windows.zip"><img src="assets/images/windows.png"/></a>
+		  <a href="downloads/Duration_Linux_002_preRelease.zip"><img src="assets/images/linux.png"/></a>
+		</div>
       </div>
       
 
-     <div id="content-wrapper" class="span-20  push-4">
+     <div id="content-wrapper" class="span-20 push-4">
       {{ content }}
 
       </div>
 
       <div id="footer" class="span-20 push-4">
-        <p>&copy; James George 2012 <span class="footer-divider">|</span> <a href="http://twitter.com/obviousjim">@obviousjim</a> <span class="footer-divider">|</span> <a href="https://github.com/YCAMInterlab/Duration">On Github: YCAMInterlab/Duration</a>
+        <p>&copy; <a href="http://www.jamesgeorge.org" target="_blank">James George 2012</a> co-developed with <a href="http://interlab.ycam.jp/en" target="_blank">YCAM InterLab</a> <span class="footer-divider">|</span> <a href="http://twitter.com/obviousjim">@obviousjim</a> <span class="footer-divider">|</span> <a href="https://github.com/YCAMInterlab/Duration">On Github: YCAMInterlab/Duration</a>
         </p>
       </div>
 
